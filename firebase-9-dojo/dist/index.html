@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Firebase 9</title>
+  </head>
+  <body>
+    <div class="container mb-6">
+      <h1 class="is-size-1 pb-6">Getting started with firebase</h1>
+      <div class="columns">
+        <div class="column px-4 py-4">
+          <h2 class="is-size-3">Firebase Firestore</h2>
+
+          <form class="add">
+            <div class="field">
+              <label class="label" for="title">Title</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="text"
+                  name="title"
+                  placeholder="Secret"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="author">Author</label>
+              <div class="control">
+                <input
+                  name="author"
+                  class="input"
+                  type="text"
+                  placeholder="Rhonda Bryne"
+                />
+              </div>
+            </div>
+
+            <button class="button is-fullwidth is-success">
+              Add a new book
+            </button>
+          </form>
+        </div>
+        <div class="column px-4 py-4">
+          <h2 class="is-size-3">Delete a book</h2>
+          <form class="remove">
+            <div class="field">
+              <label class="label" for="id">ID</label>
+              <div class="control">
+                <input
+                  name="id"
+                  class="input"
+                  type="text"
+                  placeholder="xxkxx8xxxx"
+                />
+              </div>
+            </div>
+            <button class="button is-fullwidth is-danger">Delete book</button>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+      <div class="columns">
+        <div class="column px-4 py-4">
+          <h2 class="is-size-3">Firebase Signup</h2>
+
+          <form class="signup">
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="password">Password</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <button class="button is-fullwidth is-info">Sign Up</button>
+          </form>
+        </div>
+        <div class="column px-4 py-4">
+          <h2 class="is-size-3">Firebase Login</h2>
+
+          <form class="login">
+            <div class="field">
+              <label class="label" for="email">Email</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="field">
+              <label class="label" for="password">Password</label>
+              <div class="control">
+                <input
+                  class="input"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <button class="button is-fullwidth is-info">Login</button>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <button class="signout button is-danger">Signout</button>
+      <button class="unsub button is-warning">Unsub</button>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
